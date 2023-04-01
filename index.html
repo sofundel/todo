@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="./view/todo.css">
+</head>
+
+<body>
+    <div class="todo-list" id="todo-list">
+
+        <div>
+            <p class="todo-list__priority-label">HIGH</p>
+
+            <form class="todo-list__task-form" id="high-task-form">
+                <input type="text" class="todo-list__task-text" id="high-task-text"
+                    placeholder="Добавить дело с приоритетом HIGH">
+                <button class="todo-list__add-task-button" id="add-high-task-button"></button>
+            </form>
+
+            <ul class="todo-list__tasks-list" id="high-priority-list">
+                <li>
+                    <input type="checkbox" class="todo-list__task-checkbox" id="random1">
+                    <label for="random1" class="todo-list__checkbox-text">Пример структуры таски</label>
+                    <button class="todo-list__delete-task-button"></button>
+                    <div class="todo-list__time-info">
+                        <p class="todo-list__start-time">Start: 08:06 Sat 10 Dec</p>
+                        <p class="todo-list__finish-time">Finish: In progress</p>
+                        <p class="todo-list__lead-time">Lead Time: 99d 23h 59m</p>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+        <div>
+            <p class="todo-list__priority-label">LOW</p>
+
+            <form class="todo-list__task-form" id="low-task-form">
+                <input type="text" class="todo-list__task-text" id="low-task-text"
+                    placeholder="Добавить дело с приоритетом LOW">
+                <button class="todo-list__add-task-button" id="add-low-task-button"></button>
+            </form>
+
+            <ul class="todo-list__tasks-list" id="low-priority-list">
+            </ul>
+        </div>
+
+    </div>
+
+    <script type="module" src="./todo_main.js"></script>
+
+</body>
+
+</html>
